@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: whitesmoke;
 }
 
@@ -29,7 +29,7 @@ img {
   display: flex;
   align-items: center;
   margin: 24px 0;
-  border: 1px dashed black;
+  border: 1px solid black;
   padding: 16px;
   border-radius: 8px;
 }
@@ -65,7 +65,7 @@ img {
 }
 
 .contact-input {
-  border: 1px dashed black;
+  border: 1px solid black;
   padding: 16px;
   margin: 14px 0;
   border-radius: 8px;
@@ -77,12 +77,18 @@ img {
   width: 100%;
   padding: 8px;
   margin: 8px 0;
-  font-family: 'Inter', sans-serif;
 }
 
 .contact-input button {
   width: 100%;
   padding: 8px;
-  font-family: 'Inter', sans-serif;
   cursor: pointer;
+  background-color: #0aa1dd;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-input button:hover {
+  background-color: #0793ca;
 }
