@@ -1,3 +1,8 @@
+:root {
+  --primary: #2447f9;
+  --secondary: #34364a;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +11,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: whitesmoke;
+  background-color: #f6f8fd;
 }
 
 img {
@@ -19,17 +24,35 @@ img {
   padding: 16px;
 }
 
+.contact-app__header {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 28px;
+}
+
 .contact-app h1 {
   font-weight: normal;
   font-size: 48px;
-  margin-bottom: 32px;
+  flex: 1;
+  color: var(--secondary);
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   margin: 24px 0;
-  border: 1px solid black;
+  border: 1px solid var(--primary);
   padding: 16px;
   border-radius: 8px;
 }
@@ -57,7 +80,7 @@ img {
 .contact-item__delete {
   padding: 8px;
   font-size: 18px;
-  background-color: orangered;
+  background-color: #ff0000;
   color: white;
   border: 0;
   border-radius: 4px;
@@ -65,7 +88,7 @@ img {
 }
 
 .contact-input {
-  border: 1px solid black;
+  border: 1px solid var(--primary);
   padding: 16px;
   margin: 14px 0;
   border-radius: 8px;
@@ -83,7 +106,7 @@ img {
   width: 100%;
   padding: 8px;
   cursor: pointer;
-  background-color: #0aa1dd;
+  background-color: var(--primary);
   color: #f0f0f0;
   border: none;
   border-radius: 5px;
