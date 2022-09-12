@@ -26,7 +26,6 @@ img {
 
 .contact-app__header {
   display: flex;
-  align-items: center;
   padding: 2rem 0;
 }
 
@@ -38,21 +37,36 @@ img {
 .navigation ul li a {
   text-decoration: none;
   color: var(--secondary);
-  font-size: 28px;
+  font-size: 2rem;
 }
 
 .contact-app h1 {
-  font-weight: normal;
-  font-size: 48px;
+  font-weight: 600;
+  font-size: 3rem;
   flex: 1;
   color: var(--secondary);
+}
+
+.search-bar {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--primary);
+}
+
+.search-bar:focus {
+  outline: none;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   margin: 24px 0;
-  border: 1px solid var(--primary);
+  border: 3px solid var(--primary);
   padding: 16px;
   border-radius: 8px;
 }
@@ -79,39 +93,50 @@ img {
 
 .contact-item__delete {
   padding: 8px;
-  font-size: 18px;
-  background-color: #ff0000;
-  color: white;
+  font-size: 2rem;
+  color: #ff3e3e;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
 }
 
+.contact-item__delete:hover {
+  color: #ff0d0d;
+}
+
 .contact-input {
-  border: 1px solid var(--primary);
   padding: 16px;
   margin: 14px 0;
-  border-radius: 8px;
   margin-bottom: 32px;
 }
 
 .contact-input input {
   display: block;
+  font-size: 1rem;
   width: 100%;
-  padding: 8px;
-  margin: 8px 0;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  border: 3px solid;
+  border-radius: 2rem;
+}
+
+.contact-input input:focus {
+  outline-color: var(--primary);
 }
 
 .contact-input button {
   width: 100%;
-  padding: 8px;
+  padding: 16px;
+  margin-top: 1rem;
   cursor: pointer;
   background-color: var(--primary);
   color: #f0f0f0;
   border: none;
-  border-radius: 5px;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .contact-input button:hover {
-  background-color: #0793ca;
+  background-color: #1296ca;
 }
